@@ -14,4 +14,4 @@ function carousel(n){
     images[slide - 1].style.display = "block";
 };
 
-setInterval(carousel, 2500);
+setInterval(carousel, 3000);

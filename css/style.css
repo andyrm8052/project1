@@ -4,24 +4,30 @@ html{
     line-height: 34px;
     margin-top: 20px;
     background-color: #ffffff;
+    max-width: 100%;
 }
-body{
-    width: 720px;
-    margin-right: auto;
+.wrapper{
+    width: 40%;
     margin-left: auto;
+    margin-right: auto;
+    background: lightgrey;
 }
+.background{
+    background: ghostwhite;
+    width: 100%;
+}
+
+/*Menu contents including links*/
 menu{
-    width: 1280px;
     padding: 0;
     margin: 0;
 }
-#menuLinks{
-    text-align: right;
-}
 menu li{
     font-size: 16px;
-    display: inline;
-    margin-left: 50px;
+    display: inline-block;
+}
+.pageLink:not(.first){
+    margin-right: 20px;
 }
 menu a:link{
     color: #000000;
@@ -31,19 +37,13 @@ menu a:link:hover{
     color: #8d8d8d;
     text-decoration: none;
 }
-/*.carousel{
-    margin: auto;
-    width: 50%;
-    padding: 10px;
-    border-radius: 10px;
-}
-*/
+
+/*Carousel content*/
 .carousel{
-    margin-right: auto;
-    margin-left: auto;
-    width: 60%;
     display: block;
     overflow: hidden;
+    margin-right: auto;
+    margin-left: auto;
 }
 @keyframes fade{
     from {opacity: 0.4}
@@ -53,19 +53,118 @@ menu a:link:hover{
     display: none;
 }
 .carousel_img img{
-    width: 100%;
     animation-name: fade;
     animation-duration: 2s;
     border-radius: 20px;
     margin: auto;
 }
+
+/*Main page content including the title and paragraphs*/
 .mainPage{
     font-size: 16px;
 }
+
+/*Footer content*/
 footer {
     clear: left;
     padding-top: 50px;
 }
 
+@media (min-width: 411px){
+    .menuLinks{
+        text-align: right;
+        margin-right: -50px;
+    }
+    menu li{
+        font-size: 12px;
+        position: relative;
+        padding-left: 15px;
+        margin-left: -35px;
+    }
+    .first{
+        left: -35%;
+    }
+    .pageLink:not(.first){
+        left: -15%;
+    }
+    .mainPage, h3{
+        width: 90%;
+        position: relative;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .carousel{
+        width: 80%;
+    }
+    .carousel_img img{
+        width: 100%;
+    }
+}
 
+@media (min-width: 768px){
+    .menuLinks{
+        text-align: left;
+    }
+    menu li{
+        font-size: 16px;
+        position: relative;
+        margin-left: 0;
+    }
+    .first{
+        float: left;
+        left: 0;
+    }
+    .pageLink:not(.first){
+        left: 25%;
+        margin-right: -10px;
+        padding-left: 15px;
+    }
+    .carousel{
+        width: 60%;
+    }
+    .carousel_img img{
+        width: 100%;
+    }
+}
+
+@media (min-width: 1024px){
+    .menuLinks{
+        text-align: left;
+    }
+    menu li{
+        position: relative;
+        margin-left: 5px;
+    }
+    .pageLink:not(.first){
+        left: 35%;
+        padding-left: 15px;
+    }
+    .carousel{
+        width: 60%;
+    }
+    .carousel_img img{
+        width: 100%;
+    }
+}
+
+@media (min-width: 1366px){
+    .menuLinks{
+        text-align: left;
+    }
+    menu li{
+        position: relative;
+        margin-left: 5px;
+    }
+    .pageLink:not(.first){
+        left: 50%;
+        margin-right: 10px;
+        padding-left: 10px;
+    }
+    .carousel{
+        width: 60%;
+    }
+    .carousel_img img{
+        width: 100%;
+    }
+}
 
