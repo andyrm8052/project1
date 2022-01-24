@@ -1,5 +1,5 @@
 html{
-    font-family: "Open Sans";
+    font-family: "Open Sans", serif;
     font-size: 20px;
     line-height: 34px;
     margin-top: 20px;
@@ -22,13 +22,12 @@ menu{
     margin: 0;
 }
 menu li{
-    text-decoration: none;
-    font-size: 18px;
     display: inline-block;
     margin-left: 10px;
     margin-right: 10px;
 }
 menu li a{
+    font-size: 18px;
     color: #ffffff;
     text-decoration: none;
 }
@@ -62,7 +61,7 @@ menu a:link:hover{
 
 /*Main page content including the title and paragraphs*/
 .mainPage{
-    font-family: "Open Sans Semibold";
+    font-family: "Open Sans Semibold", serif;
     width: 80%;
     margin-left: auto;
     margin-right: auto;
@@ -90,6 +89,7 @@ menu a:link:hover{
 .address{
     line-height: 10px;
 }
+
 /*Responsive media*/
 @media (max-width: 411px) {
     menu li {
