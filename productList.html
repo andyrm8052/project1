@@ -7,8 +7,8 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body>
-  <div class="wrapper">
+<div class="wrapper">
+  <body>
     <header id="menuHeader">
       <div class="menuLinks">
         <menu>
@@ -18,8 +18,53 @@
         </menu>
       </div>
     </header>
-  </div>
-</body>
 
-<script></script>
+    <div class="background">
+      <div class="filter-wrapper">
+        <div id="orderBy" style="font-size: 16px; color: white"><h3>Order By: </h3>
+          <div class="product active" onclick="renderList('all')">All</div>
+          <div class="product" onclick="renderList('shoes')">Shoes</div>
+          <div class="product" onclick="renderList('glasses')">Glasses</div>
+          <div class="product" onclick="renderList('electronic')">Electronics</div>
+        </div>
+
+        <div id="sortBy" style="font-size: 16px; color: white"><h3>Sort By: </h3>
+          <div class="product active" onclick="renderList('all')">All</div>
+          <div class="product" onclick="renderList('title')">Title</div>
+          <div class="product" onclick="renderList('price')">Price</div>
+        </div>
+
+        <div class="product-list">
+          <div class="item-list shoes title price">
+            <div class="details">
+              <div class="name"><h4>Shoes 1</h4></div>
+              <div class="price"><h4>79.99</h4></div>
+            </div><img src="img/img1.png" alt="shoes"></div>
+
+          <div class="item-list glasses title price">
+            <div class="details">
+              <div class="name"><h4>Glasses 1</h4></div>
+              <div class="price"><h4>149.99</h4></div>
+          </div><img src="img/img2.png" alt="glasses">
+
+          </div>
+          <div class="item-list electronic title price">
+            <div class="details">
+              <div class="name"><h4>Watch 1</h4></div>
+              <div class="price"><h4>129.99</h4></div>
+            </div><img src="img/img3.png" alt="watch"></div>
+        </div>
+
+
+      </div>
+    </div>
+
+    <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="js/productList.js"></script>
+
+  </body>
+</div>
+
+
+
 </html>
